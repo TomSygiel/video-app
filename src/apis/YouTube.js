@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const KEY = 'AIzaSyBIcFxe7PGLnibxdVTVUrfdhRoYybFw9Pw'
+const KEY = process.env.REACT_APP_SECRET_KEY;
 
 export default axios.create({
     baseURL: 'https://www.googleapis.com/youtube/v3',
@@ -11,7 +11,3 @@ export default axios.create({
         key: KEY
     }
 });
-
-
-
-// https://www.googleapis.com/youtube/v3/search
